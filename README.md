@@ -48,6 +48,13 @@ npx playwright test tests/todo-page/ tests/landing-page/
 npx playwright test my-spec my-spec-2
 ```
 
+## 录制脚本
+
+```bash
+npx playwright codegen [https://192.168.31.12:18443/]
+```
+根据操作可生成对应的代码，可复制到vscode对应位置运行！
+
 ## 注意
 
 执行时可能会报
