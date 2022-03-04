@@ -1,6 +1,8 @@
 // global-setup.ts
 import { chromium, FullConfig } from '@playwright/test';
 import playwrightconf from './playwright.config';
+
+//将登录信息token等保存在storageState.json中，后面测试会使用
 async function globalSetup(config: FullConfig) {
 
   const browser = await chromium.launch({
