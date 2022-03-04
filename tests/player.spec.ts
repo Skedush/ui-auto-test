@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
   await enterPage(page, '信息发布');
   // Click sidebar's a text=播放器
   await page.locator('.sidebar a', { has: page.locator('text="播放器"') }).click();
-  await expect(page).toHaveURL('https://192.168.31.12:18443/v2/zh/mcs/players');
+  // await expect(page).toHaveURL('/v2/zh/mcs/players');
 });
 
 
