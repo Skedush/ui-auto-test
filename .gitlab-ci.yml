@@ -1,0 +1,15 @@
+name: GitHub Actions Build and Deploy Demo
+on:
+  push:
+    branches:
+      - docs
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    
+    - name: Install and Build
+      run: npm i && npm t
+   
