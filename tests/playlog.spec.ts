@@ -6,12 +6,12 @@ test.beforeEach(async ({ page }) => {
   await enterPage(page, '信息发布');
   // Click sidebar's a text=播放审计
   await page.locator('.sidebar a', { has: page.locator('text="播放审计"') }).click();
-  // await expect(page).toHaveURL('/v2/zh/mcs/players');
+  // await expect(page).toHaveURL('/v2/zh/mcs/log');
 });
 
 
-// 测试标签查看
-test('标签查看', async ({ page }) => {
+// 测试播放审计查看
+test('播放审计查看', async ({ page }) => {
   await expect(page.locator('thead tr .first')).toHaveText('播放器名称');
 
 });

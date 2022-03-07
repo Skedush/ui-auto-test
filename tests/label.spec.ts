@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
   await enterPage(page, '信息发布');
   // Click sidebar's a text=标签
   await page.locator('.sidebar a', { has: page.locator('text="标签"') }).click();
-  // await expect(page).toHaveURL('/v2/zh/mcs/players');
+  // await expect(page).toHaveURL('/v2/zh/mcs/label');
 });
 
 
