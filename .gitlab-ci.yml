@@ -11,3 +11,4 @@ test:
   only:
     refs:
       - schedules
+      - web
