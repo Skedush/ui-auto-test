@@ -21,6 +21,7 @@ test('测试手动发布-播放器库中的第一个播放器有内容', async (
     // Click button:has-text("添加播放器")
     await page.locator('button:has-text("添加播放器")').click();
     // expect first span exist
-    await expect(page.locator('.span').first()).toBeDefined()
+    await expect(page.locator('label').first()).toBeDefined()
+    await expect(page.locator('label').first()).toHaveText('修改时间:')
 
   });
