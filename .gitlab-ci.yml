@@ -9,5 +9,5 @@ test:
     - dev-srp
 
   only:
-    - main
-
+    refs:
+      - schedules
