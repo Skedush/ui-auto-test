@@ -3,7 +3,7 @@ test:
   image: mcr.microsoft.com/playwright:focal
   script:
     # - cd -- "$CI_PROJECT_DIR"
-    - npm ci
+    - npm i
     - npm run test
     # - npm run prod &
     # - sleep 10 && curl http://localhost:3000
