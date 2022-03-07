@@ -48,6 +48,13 @@ npx playwright test tests/todo-page/ tests/landing-page/
 npx playwright test my-spec my-spec-2
 ```
 
+## 录制脚本
+
+```bash
+npx playwright codegen [http://192.168.31.165:38080/]
+```
+根据操作可生成对应的代码，可复制到vscode对应位置运行！
+
 ## 注意
 
 执行时可能会报
@@ -61,7 +68,7 @@ msvcr90.dll
 
 在
 C:\Windows\WinSxS\amd64_microsoft.vc90.crt.[hash]
-文件夹中找到复制到C:\System32中
+文件夹中找到复制到C:\Windows\System32中
 
 ## docs
 https://playwright.dev/
